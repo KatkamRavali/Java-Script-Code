@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Connect Java Script to Html</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            body{
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>----String Operations / String Manipulations---</h1>
+        <h3>
+            var data = "Hey everyone welcome to the world of Java Script"</br>
+            console.log("Data :",data);
+        </h3><hr>
+
+        <h1>---Lowercase---</h1>
+        <h3>
+            console.log("Lower case :",data.toLowerCase());
+        </h3><hr>
+
+        <h1>---Uppercase---</h1>
+        <h3>
+            console.log("Upper case :",data.toUpperCase());
+        </h3><hr>
+
+        <h1>---Slice Operation---</h1>
+        <h3>
+            <h2>1. Data doesnt get stored</h2>
+            console.log("Slice :",data.slice(2,12)); 
+            <h2>2. Data doesnt get stored</h2>
+            data = data.slice(2,12);<br>               
+            console.log("Slice :",data);
+        </h3><hr>
+
+        <h1>--- Length ---</h1>
+        <h3>
+            console.log("Length :",data.length);
+        </h3><hr>
+
+        <h1>--- Replace --</h1>
+        <h3>
+            <h2>1. Data doesnt get stored</h2>
+            console.log("Replace :",data.replace("Hey", "Hi")); 
+            <h2>2. Data doesnt get stored</h2>
+            data = data.replace("Hey" , "Hi"); <br>              
+            console.log("Replace :",data);
+        </h3><hr>
+
+        <h1>--- Includes ---</h1>
+        <h3>
+            console.log("Includes :", data.includes("welcome"));<br>
+            console.log("Includes :", data.includes("you"));
+        </h3><hr>
+
+        <h1>--- Negative Slice ---</h1>
+        <h3>
+            var com = "Ramya";<br>
+            console.log("Slice :",data.slice(8,-1));<br>
+            console.log("Slice :",com.slice(2,-1));
+        </h3><hr>
+
+        <h1>--- String to Number ---</h1>
+        <h3>
+            var num = "12345";<br>
+            console.log("String :",num);<br>
+            console.log("Integer :",parseInt(num));
+        </h3><hr>
+
+        <h1>--- Number to String ---</h1>
+        <h3>
+            var m = 1234;<br>
+            console.log("Number :",m);<br>
+            console.log("String :",m.toString());
+        </h3><hr>
+
+        <h1>--- toLocaleString -- </h1>
+        <h3>
+            var c = 17392164815;<br>
+            console.log("String :",c.toLocaleString());
+        </h3><hr>
+
+        <h1>--- Numbers consisting character and numbers---</h1>
+        <h3>
+            var op = "3864agdj";<br>
+            console.log("AlphaNumeric :",op);<br>
+            console.log("Gives only Numbers :",parseInt(op));
+        </h3><br>
+        <h3>
+            var mp = "sgga26452";<br>
+            console.log("AlphaNumeric :",mp);<br>
+            console.log("Not a Number :",parseInt(mp));
+        </h3><br>
+        <h3>
+            var k = "sjjag1372mjz";<br>
+            console.log("String values first :",k);<br>
+            console.log("String values first :",parseInt(k));
+        </h3><br>
+        <h3>
+            var w = "11324sjai2373";<br>
+            console.log("Numbers values first :",w);<br>
+            console.log("Numbers values first :",parseInt(w));
+        </h3><hr>
+
+        <h1>--- Split Operator ---</h1>
+        <h3>
+            var demo = "Good Morning";<br>
+            console.log("Demo :",demo);<br>
+            console.log("Demo :",demo.split(" "));<br>
+            console.log("Demo :",demo.split("o"));
+        </h3><hr>
+
+        <h1>--- Objects ---</h1>
+        <h3>
+            var details = {
+                Name : "Ravali",
+                Age : 20,
+                Course : "Bsc Honors",
+                College : "St Francis College For Women"
+            };<br><br>
+            <h2>1. To get all details</h2>
+            console.log(details);
+            <h2>2. To get only Name as output </h2>
+            console.log(details.Name);
+            <h2>3. To get only keys </h2>
+            console.log(Object.keys(details)); 
+            <h2>4. To get only values </h2> 
+            console.log(Object.values(details)); 
+            <h2>5. To update the values </h2> 
+            details.Name = "Mikky";  
+            console.log(details);
+        </h3><hr>
+
+        <h1>--- Arrays ---</h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+        <script src="js-with-html.js"></script>
+    </body>
+</html>
