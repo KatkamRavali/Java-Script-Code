@@ -135,7 +135,295 @@
             console.log(details);
         </h3><hr>
 
-        <h1>--- Arrays ---</h1>
+        <h1>--- Operations [If u dont wanna store values ]---</h1>
+        <h3>
+            <h2>1. Addition</h2> 
+            var num1 = 10;<br>
+            var num2 = 10;<br>
+            console.log("Addition of Two Numbers :",num1+num2);
+            <h2>2. Subtraction</h2>
+            var num1 = 10;<br>
+            var num2 = 10;<br>
+            console.log("Subtraction of Two Numbers :",num1-num2);
+            <h2>3. Multiplication</h2>
+            var num1 = 10;<br>
+            var num2 = 10;<br>
+            console.log("Multiplication of Two Numbers :",num1*num2);
+            <h2>4. Division</h2>
+            var num1 = 10;<br>
+            var num2 = 10;<br>
+            console.log("Division of Two Numbers :",num1/num2);
+            <h2>5. Modulus</h2>
+            var num1 = 10;<br>
+            var num2 = 10;<br>
+            console.log("Modulus of Two Numbers :",num1%num2);
+        </h3><hr>
+
+        <h1>--- Operations [If u wanna store values ] ---</h1>
+        <h3>
+            <h2>1. Addition</h2>
+            var sum = num1+num2;<br>
+            console.log("Addition :",sum);
+            <h2>2. Subtraction</h2>
+            var sub = num1-num2;<br>
+            console.log("Subtraction :",sub);
+            <h2>3. Multiplication</h2>
+            var mul = num1*num2;<br>
+            console.log("Multiplication :",mul);
+            <h2>4. Division</h2>
+            var div = num1/num2;<br>
+            console.log("Division :",div);
+            <h2>5. Modulus</h2>
+            var mod = num1%num2;<br>
+            console.log("Modulus :",mod);
+        </h3><hr><hr>
+
+        <h1>--- Short Hand Abbrevations ---</h1>
+        <h3>
+            <h2>1. Addition</h2>
+            var a = 3;<br>
+            var b = 3;<br>
+            console.log("Add :",a += b);
+            <h2>2. Subtraction</h2>
+            var c = 2;<br>
+            var d = 4;<br>
+            console.log("Sub :",c -= d);
+            <h2>3. Multiplication</h2>
+            var e = 4;<br>
+            var f = 5;<br>
+            console.log("Mul :",e *= f);
+            <h2>4. Division</h2>
+            var g = 3;<br>
+            var h = 5;<br>
+            console.log("Div :",g /= h);
+            <h2>5. Modulus</h2>
+            var i = 4;<br>
+            var j = 4;<br>
+            console.log("Mod :",i %= j);
+        </h3><hr>
+
+        <h1>--- Increment and decrement ---</h1>
+        <h3>
+            <h2>1. Increment</h2>
+            <h2>a. Post Increment [appended on next line ] : display fst then increment</h2>
+            var num3 = 5;<br>
+            console.log("Given Values:",num3)<br>
+            console.log("Before post increment :",num3++);<br>  
+            console.log("After post increment :",num3)<br>
+            we can also write in this ways <br>
+            num3 = num3 + 1 ; or num3 += 1;
+            <h2>b. Pre Increment [appended on same line ] : increment fst then display</h2>
+            var num4 = 3<br>
+            console.log("Given Values:",num4)<br>
+            console.log("Pre increment :",++ num4);<br>
+            console.log("After pre increment :",num4);<br>
+            we can also write in this ways <br>
+            num4 = num4 + 1 ; or num4 += 1;<br>
+            <h2>2. Decrement</h2>
+            <h2>a. Post Decrement [appended on next line ]</h2>
+            var num5 = 9;<br>
+            console.log("Given Values:",num5)<br>
+            console.log("Before post decrement :",num5--);<br>
+            console.log("After post decrement :",num5);<br>
+            we can also write in this ways<br> 
+            num5 = num5 + 1 ; or num5 += 1;
+            <h2>b. Pre Decrement [appended on same line ]</h2>
+            var num6 = 6;<br>
+            console.log("Given Values:",num6)<br>
+            console.log("Pre Decrement :",-- num6);<br>
+            console.log("After pre decrement :",num6);<br>
+            we can also write in this ways<br>
+            num6 = num6 - 1 ; or num6 -= 1;
+        </h3><hr>
+
+        <h1>--- Comparison Operators ---</h1>
+        <h3>
+            var num7 = 12;<br>
+            var num8 = 12;<br>
+            console.log(num7 == num8);
+            <h2>a. Equals to</h2>
+            var num9 = 2;<br>
+            var num10 = "2";<br>
+            console.log(num9 == num10);<br>
+            console.log(num9 === num10);
+            <h2>b. Not Equals to</h2> 
+            console.log("Not Equals to :",num7 != num8);<br>
+            console.log("Not Equals to :",num9 != num10);<br>
+            console.log("Not Equals to :",num9 !== num10);
+            <h2>c. Not</h2>
+            var isCrt = false;<br>
+            console.log(isCrt);<br>
+            console.log(!isCrt);
+            <h2>d. Greater than</h2>
+            var num11 = 5;<br>
+            var num12 = 6;<br>
+            console.log("Greater than or Not :",num11 > num12);
+            <h2>e. Lesser than</h2>
+            console.log("Lesser than or Not :",num11 < num12);
+            <h2>f. Greater than or euqal to</h2>
+            console.log("Greater than or equal to :",num11 >= num12);
+            <h2>g. Lesser than or euqal to</h2>
+            console.log("Lesser than or equal to :",num11 <= num12);
+        </h3><hr>
+
+        <h1>--- Compilation Operator ---</h1>
+        <h3>
+            var age = 17;<br>
+            if(age>18){<br>
+                console.log("Eligible to vote");<br>
+            } else {<br>
+                console.log("Not Eligible to vote");<br>
+            }
+        </h3><hr>
+
+        <h1>--- Conditional Operator ---</h1>
+        <h3>age > 18 ? console.log("Eligible to vote") : console.log("Not Eligible to vote");</h3><hr>
+
+        <h1>--- Functions ----</h1>
+        <h3>
+            var obj1 = {<br>
+                name : "TVS",<br>
+                bikename : function(){<br>
+                    console.log("This is bike name");<br>
+                }<br>
+            }<br>
+            console.log(obj1.name);<br>
+            obj1.bikename();
+            <h2>1. Named Function [ With parameter ]</h2>
+            function add(a , b){<br>
+                console.log(a+b);<br>
+            }<br>
+            add(2,3); // Calling a function 
+            <h2>Named Function [ Without parameter ]</h2>
+            function con(){<br>
+                console.log("I am Named Function")<br>
+            }<br>
+            con();
+            <h2>2. Anonymous Function With parameters</h2>
+            var sum = function(a , b){<br>
+                console.log(a+b);<br>
+            }<br>
+            sum(2,5);
+            <h2>Anonymous Function Without parameters</h2>
+            var cont = function(){<br>
+                console.log("Hey I am Anonymous Function");<br>
+            }<br>
+            cont();
+            <h2>3. Arrow Function With parameters</h2>
+            var conts = (a , b) => {<br>
+                console.log(a+b);<br>
+            }<br>
+            conts(3,1);<br><br>
+            
+            var conts = (a , b) => console.log(a+b);<br>
+            conts(3,1)
+            <h2>Arrow Function With parameters</h2>
+            var conte = () => {<br>
+                console.log("Hey this is Arrow function");<br>
+            } <br>
+            conte();<br><br>
+            
+            var conte = () => console.log("Hey this is Arrow function");<br>
+            conte();
+        </h3><hr>
+
+        <h1>--- Arrays Methodology / Methods ---</h1>
+        <h3>
+            <h2>1. Map Method :</h2>
+            var cop = [1 , 2 , 3 , 4 , 5];<br>
+            console.log("Array : ",cop);<br><br>
+            
+            var newArray = cop.map((text) => text+2);<br>
+            console.log("newArray is mapped with array:" ,newArray);
+            <h2>Using { }</h2>
+            var newArrays = cop.map((text) => {return text*2});<br>
+            console.log("newArray is mapped with array:" ,newArrays);
+            <h2>To get index values</h2>
+            var newName = cop.map((text , index) => console.log(text*2 ,'=>', index));
+            <h2>2. Filter Method :</h2>
+            var newArray1 = cop.filter((text) => text<=3);<br>
+            console.log("Filter :",newArray1);
+            <h2>Using if - statment</h2>
+            var newArray2 = cop.filter((text) => {<br>
+                if(text>=3)<br>
+                    return data;<br>
+            });<br>
+            console.log("Filter using if :",newArray2);
+            <h2>3. Find Method :</h2>
+            var newArray3 = newArrays.find((text) => text>=4);<br>
+            console.log("Find [Greater than] :",newArray3);<br><br>
+            
+            var newArray4 = cop.find((text) => text>5);<br>
+            console.log("Find :",newArray4);<br><br>
+            
+            var newArray4 = cop.find((text) => text<=5);<br>
+            console.log("Find [Lesser than] :",newArray4);
+            <h2>4. Reduce Method :</h2>
+            var newWord = cop.reduce((accumulation , currentValue) => {<br>
+                return accumulation + currentValue;<br>
+            },0);<br>
+            console.log(newWord);
+            <h2>Real-time example of Reduce</h2>
+            var filpcart = [<br>
+                {<br>
+                    price: 200,<br>
+                    quantity:1<br>
+                },<br>
+                {<br>
+                    price: 200,<br>
+                    quantity:1<br>
+                },<br>
+                {<br>
+                    price: 500,<br>
+                    quantity:3<br>
+                },<br>
+                {<br>
+                    price: 200,<br>
+                    quantity:2<br>
+                },<br>
+                {<br>
+                    price: 1200,<br>
+                    quantity:1<br>
+                }<br>
+            ];<br><br>
+            
+            var Cart = filpcart.reduce((accumulation , currentValue) => {<br>
+                return accumulation + currentValue.price * currentValue.quantity;<br>
+            },0); <br>
+            console.log("Total Amount :",Cart);
+        </h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
+        <h3></h3><hr>
+
+        <h1></h1>
         <h3></h3><hr>
 
         <h1></h1>
