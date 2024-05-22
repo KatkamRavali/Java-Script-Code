@@ -327,23 +327,127 @@ var Cart = filpcart.reduce((accumulation , currentValue) => {
 },0); 
 console.log("Total Amount :",Cart);
 
-// Promises
+// --- Promises ---
 var prom = new Promise((resolve , reject)=>{
-    resolve("Success"),
-    reject("Error Occurred");
+    resolve("Success - 1"),
+    reject("Error Occurred - 2");
 });
 
 prom 
-.then((succ) => {console.log(succ)})
-.catch((err) => {console.log(err)});
+.then((succ) => {console.log("Example for Promises :",succ)})
+.catch((err) => {console.log("Example for Promises :",err)});
 // To show the result late 
 var p = new Promise((resolve , reject)=>{
     setTimeout(function(){
-        resolve("Success");
-    },4000);
-    // reject("Error Occurred");
+        resolve("Success - 3");
+    },1000);
+    // reject("Error Occurred - 4");
 });
 
 p 
-.then((succ) => {console.log(succ)})
-.catch((err) => {console.log(err)});
+.then((succ) => {console.log("To delay result :",succ)})
+.catch((err) => {console.log("To delay result :",err)});
+// To show which result comes first 
+var mon= new Promise((resolve , reject)=>{
+    setTimeout(function(){
+        resolve("Success - 5");
+    },1000);
+
+    setTimeout(function(){
+        reject("Error Occurred - 6"); 
+    },2000);
+});
+
+mon
+.then((suc) => {console.log("Which result comes first :",suc)})
+.catch((er) => {console.log("Which result comes first :",er)});
+// When we write mutilple then conditions 
+var mo= new Promise((resolve , reject)=>{
+    setTimeout(function(){
+        resolve("Successed");
+    },3000);
+
+    setTimeout(function(){
+        reject("Error Occurred"); 
+    },4000);
+});
+
+mo
+.then((suc) => suc = "Hey finally " + suc)
+.then((suc) => {console.log(suc)})
+.catch((er) => {console.log(er)});
+
+// --- Async and Await ---
+var myPromise = new Promise(function(resolve , reject){
+    setTimeout(function(){
+        resolve("Sucessful")
+    },4000);
+})
+
+var getMyPromise = async() => {
+    var getMyPromiseResult = await myPromise;
+    console.log(getMyPromiseResult);
+};
+
+getMyPromise();
+// Using try and catch block 
+var myPromises = new Promise(function(resolve , reject){
+    setTimeout(function(){
+        resolve("Program is Sucessful")
+    },5000);
+})
+
+var getMyPromises = async() => {
+    try{
+    var getMyPromiseResults = await myPromises;
+    console.log(getMyPromiseResults);
+    } catch(expection) {
+    console.log(expection);
+    }
+};
+
+getMyPromises();
+// If u want to throw the error
+var myPromisess = new Promise(function(resolve , reject){
+    setTimeout(function(){
+        resolve("Program is Sucessful done")
+    },7000);
+
+    setTimeout(function(){
+        reject("Errors occured")
+    },6000);
+})
+
+var getMyPromisess = async() => {
+    try{
+    var getMyPromiseResultss = await myPromisess;
+    console.log(getMyPromiseResultss);
+    } catch(expection) {
+        // throw new Error(expection);
+        console.error(expection);
+    }
+};
+
+getMyPromisess();
+// Pending state 
+var myProm = new Promise(function(resolve , reject){
+    setTimeout(function(){
+        resolve("Program is Sucessful completed")
+    },9000);
+
+    setTimeout(function(){
+        reject("Check the Errors")
+    },8000);
+})
+
+var getMyProm = () => {
+    try{
+    let getMyPromResult =  myProm;
+    console.log(getMyPromResult);
+    } catch(expections) {
+        // throw new Error(expection);
+        console.log(expections);
+    }
+};
+
+getMyProm();

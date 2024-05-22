@@ -393,50 +393,136 @@
             console.log("Total Amount :",Cart);
         </h3><hr>
 
-        <h1></h1>
-        <h3></h3><hr>
+        <h1>--- Promises ---</h1>
+        <h3>
+            var prom = new Promise((resolve , reject)=>{<br>
+                resolve("Success"),<br>
+                reject("Error Occurred");<br>
+            });<br><br>
+            
+            prom <br>
+            .then((succ) => {console.log(succ)})<br>
+            .catch((err) => {console.log(err)});
+            <h2>To show the result of one value late</h2>
+            var p = new Promise((resolve , reject)=>{<br>
+                setTimeout(function(){<br>
+                    resolve("Success");<br>
+                },4000);<br><br>
 
-        <h1></h1>
-        <h3></h3><hr>
+                reject("Error Occurred");
+            });<br><br>
+            
+            p <br>
+            .then((succ) => {console.log(succ)})<br>
+            .catch((err) => {console.log(err)});
+            <h2>To show the result for two values [which result shows first]</h2>
+            var mon= new Promise((resolve , reject)=>{<br>
+                setTimeout(function(){<br>
+                    resolve("Success");<br>
+                },4000);<br><br>
+            
+                setTimeout(function(){<br>
+                    reject("Error Occurred"); <br>
+                },3000);<br>
+            });<br><br>
+            
+            mon<br>
+            .then((suc) => {console.log(suc)})<br>
+            .catch((er) => {console.log(er)});
+            <h2>When we write mutilple then conditions</h2> 
+            var mo= new Promise((resolve , reject)=>{<br>
+                setTimeout(function(){<br>
+                    resolve("Successed");<br>
+                },4000);<br><br>
+            
+                setTimeout(function(){<br>
+                    reject("Error Occurred"); <br>
+                },9000);<br>
+            });<br><br>
+            
+            mo<br>
+            .then((suc) => suc = "Hey finally " + suc)<br>
+            .then((suc) => {console.log(suc)})<br>
+            .catch((er) => {console.log(er)});
+        </h3><hr>
 
-        <h1></h1>
-        <h3></h3><hr>
+        <h1>--- Async and Await ---</h1>
+        <h3>
+            var myPromise = new Promise(function(resolve , reject){<br>
+                setTimeout(function(){<br>
+                    resolve("Sucessful")<br>
+                },6000);<br>
+            })<br><br>
+            
+            var getMyPromise = async() => {<br>
+                var getMyPromiseResult = await myPromise;<br>
+                console.log(getMyPromiseResult);<br>
+            };<br><br>
+            
+            getMyPromise();
+            <h2>Using try and catch block</h2>
+            var myPromises = new Promise(function(resolve , reject){<br>
+                setTimeout(function(){<br>
+                    resolve("Program is Sucessful")<br>
+                },7000);<br>
+            })<br><br>
+            
+            var getMyPromises = async() => {<br>
+                try{<br>
+                var getMyPromiseResults = await myPromises;<br>
+                console.log(getMyPromiseResults);<br>
+                } catch(expection) {<br>
+                console.log(expection);<br>
+                }<br>
+            };<br><br>
+            
+            getMyPromises();
+            <h2>Wanna throw error</h2>
+            var myPromisess = new Promise(function(resolve , reject){<br>
+                setTimeout(function(){<br>
+                    resolve("Program is Sucessful")<br>
+                },9000);<br><br>
+            
+                setTimeout(function(){<br>
+                    reject("Err")<br>
+                },8000);<br>
+            })<br><br>
+            
+            var getMyPromisess = async() => {<br>
+                try{<br>
+                var getMyPromiseResultss = await myPromisess;<br>
+                console.log(getMyPromiseResultss);<br>
+                } catch(expection) {<br>
+                    throw new Error(expection);<br>
+                    console.error(expection);<br>
+                }<br>
+            };<br><br>
+            
+            getMyPromisess();
+            <h2>Pending state</h2>
+            var myProm = new Promise(function(resolve , reject){<br>
+                setTimeout(function(){<br>
+                    resolve("Program is Sucessful completed")<br>
+                },9000);<br><br>
+            
+                setTimeout(function(){<br>
+                    reject("Check the Errors")<br>
+                },8000);<br>
+            })<br><br>
+            
+            var getMyProm = () => {<br>
+                try{<br>
+                let getMyPromResult =  myProm;<br>
+                console.log(getMyPromResult);<br>
+                } catch(expections) {<br>
+                    throw new Error(expection);<br>
+                    console.log(expections);<br>
+                }<br>
+            };<br><br>
+            
+            getMyProm();
+        </h3><hr>
 
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
-
-        <h1></h1>
-        <h3></h3><hr>
         <script src="js-with-html.js"></script>
     </body>
 </html>
