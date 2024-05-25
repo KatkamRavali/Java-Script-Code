@@ -423,7 +423,6 @@ var getMyPromisess = async() => {
     var getMyPromiseResultss = await myPromisess;
     console.log(getMyPromiseResultss);
     } catch(expection) {
-        // throw new Error(expection);
         console.error(expection);
     }
 };
@@ -445,9 +444,35 @@ var getMyProm = () => {
     let getMyPromResult =  myProm;
     console.log(getMyPromResult);
     } catch(expections) {
-        // throw new Error(expection);
         console.log(expections);
     }
 };
 
 getMyProm();
+
+// -------- Spread Operator -------
+var mic = {
+    name : "Ravali",
+    age : 20
+};
+console.log("Object :",mic);
+console.log({mic});
+console.log({...mic}); // Example of Spread Operator
+// To add something extra inside the spread operator
+console.log({...mic, designation : "Student"});
+// Updating Key value using spread operator
+console.log({...mic,designation : "FullStack Developer"});
+
+// ------ Date Operator ------
+var date = new Date();
+console.log(date);
+
+// Each time we refresh the values get changed 
+var date = new Date();
+console.log("Date-1 :",Date.now());
+
+var date = new Date();
+console.log("Date-2 :",Date.now());
+
+var date = new Date();
+console.log("Date-3 :",Date.now());

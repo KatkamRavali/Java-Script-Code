@@ -523,6 +523,38 @@
             getMyProm();
         </h3><hr>
 
+        <h1>---- Spread Operator ----</h1>
+        <h3>
+            var mic = {<br>
+                name : "Ravali",<br>
+                age : 20<br>
+            };<br><br>
+
+            console.log("Object :",mic);<br>
+            console.log({mic});<br>
+            console.log({...mic}); [ Example of Spread Operator ]
+            <h2>To add something extra inside the spread operator</h2>
+            console.log({...mic, designation : "Student"});
+            <h2>Updating Key value using spread operator</h2>
+            console.log({...mic,designation : "FullStack Developer"});
+        </h3><hr>
+
+        <h1>------ Date Operator ------</h1>
+        <h3>
+            var date = new Date();<br>
+            console.log(date);
+            
+            <h2>Each time we refresh the values get changed</h2>
+            var date = new Date();<br>
+            console.log("Date-1 :",Date.now());<br><br>
+            
+            var date = new Date();<br>
+            console.log("Date-2 :",Date.now());<br><br>
+            
+            var date = new Date();<br>
+            console.log("Date-3 :",Date.now());
+        </h3><hr>
+
         <script src="js-with-html.js"></script>
     </body>
 </html>
